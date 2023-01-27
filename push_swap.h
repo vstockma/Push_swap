@@ -6,7 +6,7 @@
 /*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/22 15:15:05 by vstockma          #+#    #+#             */
-/*   Updated: 2023/01/26 13:31:09 by vstockma         ###   ########.fr       */
+/*   Updated: 2023/01/27 12:15:11 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,10 @@ typedef struct s_var
 {
 	char	**alist;
 	char	**blist;
-    int     index;
-    int     a;
-    int     b;
+	int		index;
+	int		a;
+	int		b;
+	int		sw;
 }			t_var;
 
 //push_swap.c
@@ -37,9 +38,27 @@ int			check_dups(int j, int c, t_var *vars);
 void		ft_error_check(t_var *vars);
 
 //free.c
-void    ft_init_vars(t_var *vars);
+void		ft_init_vars(t_var *vars);
 void		ft_message(int i);
 void		ft_free_arr(int i, t_var *vars);
 void		ft_freeee(t_var *vars);
+
+//operations1.c
+void		ft_sa(t_var *vars);
+void		ft_sb(t_var *vars);
+void		ft_pa(t_var *vars);
+void		ft_pb(t_var *vars);
+void		ft_new(int x, t_var *vars);
+
+//operations2.c
+void		ft_ra(t_var *vars);
+void		ft_rb(t_var *vars);
+void		ft_rra(t_var *vars);
+void		ft_rrb(t_var *vars);
+
+//operations3.c
+void		ft_ss(t_var *vars);
+void		ft_rr(t_var *vars);
+void		ft_rrr(t_var *vars);
 
 #endif

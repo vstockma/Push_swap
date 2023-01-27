@@ -6,18 +6,20 @@
 /*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/24 10:47:17 by vstockma          #+#    #+#             */
-/*   Updated: 2023/01/26 13:31:00 by vstockma         ###   ########.fr       */
+/*   Updated: 2023/01/27 12:12:36 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft/libft.h"
 #include "push_swap.h"
 
-void    ft_init_vars(t_var *vars)
+void	ft_init_vars(t_var *vars)
 {
-    vars->a = vars->index;
-    vars->b = 0;;
+	vars->a = vars->index;
+	vars->b = 0;
+	vars->sw = 0;
 }
+
 void	ft_message(int i)
 {
 	ft_printf("Error!\n");
