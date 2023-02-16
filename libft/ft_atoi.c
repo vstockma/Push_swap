@@ -6,7 +6,7 @@
 /*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 11:06:06 by vstockma          #+#    #+#             */
-/*   Updated: 2023/01/26 11:21:08 by vstockma         ###   ########.fr       */
+/*   Updated: 2023/02/15 12:38:01 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,5 +45,7 @@ int	main()
 
 	printf("%d", ft_atoi(str));
 	return (0);
+
+	return ((int)value * a);
 }
 */
