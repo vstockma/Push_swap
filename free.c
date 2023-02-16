@@ -6,7 +6,7 @@
 /*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/24 10:47:17 by vstockma          #+#    #+#             */
-/*   Updated: 2023/01/27 12:12:36 by vstockma         ###   ########.fr       */
+/*   Updated: 2023/02/14 12:19:39 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 void	ft_init_vars(t_var *vars)
 {
+	vars->min_value = 0;
+	vars->min_pos = 0;
 	vars->a = vars->index;
 	vars->b = 0;
 	vars->sw = 0;

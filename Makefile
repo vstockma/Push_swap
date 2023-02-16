@@ -6,13 +6,13 @@
 #    By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/22 15:17:16 by vstockma          #+#    #+#              #
-#    Updated: 2023/01/27 12:37:12 by vstockma         ###   ########.fr        #
+#    Updated: 2023/02/14 12:15:24 by vstockma         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = push_swap
 
-SRC = push_swap.c error.c free.c operations1.c operations2.c operations3.c logic.c
+SRC = push_swap.c error.c free.c operations1.c operations2.c operations3.c logic.c sort.c sort_small.c more_functions.c
 
 OBJ = $(SRC:.c=.o)
 

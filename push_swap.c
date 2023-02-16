@@ -6,7 +6,7 @@
 /*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/22 15:09:47 by vstockma          #+#    #+#             */
-/*   Updated: 2023/01/27 11:43:38 by vstockma         ###   ########.fr       */
+/*   Updated: 2023/02/15 14:30:31 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void	ft_put_list(int ac, char **av, t_var *vars)
 		free(vars);
 		exit(1);
 	}
-	while (i < ac - 1)
+	while (i < vars->index)
 	{
 		vars->alist[i] = av[i + 1];
 		i++;
@@ -55,14 +55,16 @@ int	main(int ac, char **av)
 	ft_init_vars(vars);
 	ft_put_list(ac, av, vars);
 	ft_error_check(vars);
+	ft_init(vars);
+	ft_start_sort(vars);
 
-	ft_printf("A = %s\n", vars->alist[0]);
-	ft_printf("A = %s\n", vars->alist[1]);
-	ft_printf("A = %s\n", vars->alist[2]);
-
-	ft_printf("B = %s\n", vars->blist[0]);
-	ft_printf("B = %s\n", vars->blist[1]);
-	ft_printf("B = %s\n", vars->blist[2]);
+	int i;
+	i = 0;
+	while (i < ac - 1)
+	{
+		ft_printf("%s ", vars->copy[i]);
+		i++;
+	}	
 	ft_freeee(vars);
 	return (0);
 }
