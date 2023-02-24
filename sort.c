@@ -26,7 +26,7 @@ void    ft_radix(t_var *vars, int x)
         j = 0;
         while (j < s)
         {
-            if (ft_atoi(vars->alist[0]) >> i & 1)
+            if ((ft_atoi(vars->alist[0]) & (1 << i)) != 0) //(ft_atoi(vars->alist[0]) >> i & 1) 
                 ft_ra(vars);
             else 
                 ft_pb(vars);  
