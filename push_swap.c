@@ -6,7 +6,7 @@
 /*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/22 15:09:47 by vstockma          #+#    #+#             */
-/*   Updated: 2023/02/15 14:30:31 by vstockma         ###   ########.fr       */
+/*   Updated: 2023/02/27 11:27:07 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,14 +57,15 @@ int	main(int ac, char **av)
 	ft_error_check(vars);
 	ft_init(vars);
 	ft_start_sort(vars);
+	ft_freeee(vars);
+	return (0);
+}
 
-	int i;
-	i = 0;
+/*
+int		i;
+i = 0;
 	while (i < ac - 1)
 	{
 		ft_printf("%s ", vars->copy[i]);
 		i++;
-	}	
-	ft_freeee(vars);
-	return (0);
-}
+	}*/

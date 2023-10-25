@@ -6,7 +6,7 @@
 /*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/22 15:17:22 by vstockma          #+#    #+#             */
-/*   Updated: 2023/02/15 15:53:19 by vstockma         ###   ########.fr       */
+/*   Updated: 2023/02/27 10:46:17 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,5 +109,5 @@ void	ft_error_check(t_var *vars)
 		j++;
 	}
 	if (ft_check_order(vars) == 0)
-		ft_freeee(vars);
+		ft_free_arr(4, vars);
 }
